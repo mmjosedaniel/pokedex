@@ -1,10 +1,13 @@
 import { useGetPokemonByName } from "../../services/PokemonAPI";
+import { upperFirst } from "lodash";
 
 export const PokemonInfo = () => {
   const { data } = useGetPokemonByName("bulbasaur");
   return (
-    <div>
-      <h2>Pokemon Name </h2>
-    </div>
+    <section>
+      <h2>{upperFirst(data?.name)}</h2>
+
+      <div></div>
+    </section>
   );
 };
