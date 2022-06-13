@@ -1,8 +1,8 @@
 import "./App.css";
-import { Pokedex } from "./pages/Pokedex";
+import { PokemonRouter } from "./router/PokemonRouter";
 
 function App() {
-  return <Pokedex />;
+  return <PokemonRouter />;
 }
 
 export default App;
